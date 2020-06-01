@@ -1,0 +1,26 @@
+<html>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1>Add a Blog Post</h1>
+    <form method="POST" action="./add_to_blog">
+        <p>Blog Post Title</p>
+        <input type="text" name="title">
+        <p>Post Date</p>
+        <input type="text" name="date">
+        <p>Blog Content</p>
+        <input type="text" name="text" style="width: 390px; height: 390px;">
+        <br>
+        <input type="submit" value="Add Blog Post">
+    </form>
+
+    <h1>Blog Posts</h1>
+    {% for post in posts|reverse%}
+      <p>{{post.title}}</p>
+    {% endfor %}
+    {% endblock %}
+  </body>
+</html>
+
+<!-- https://www.codementor.io/@garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2 -->
+<!-- https://www.w3schools.com/howto/howto_css_blog_layout.asp -->
