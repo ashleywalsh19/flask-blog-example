@@ -19,4 +19,7 @@ This will create a new, empty database for all your blog entries.
 
 The website has a "hidden" app route, that is 'localhost:5000/add_to_blog'. There, you can enter a blog post (title, date, and of course the text content) and when you nevigate back to the 'Blog' tab you will see your update reflected there!
 
-
+## Sources
+https://www.codementor.io/@garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+https://www.w3schools.com/howto/howto_css_blog_layout.asp
+https://www.freecodecamp.org/news/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492/
